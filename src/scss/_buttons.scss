@@ -1,0 +1,55 @@
+
+  .btn {
+    padding: 8px 25px;
+    text-align: center;
+    font-weight: 400;
+    border-radius: 8px;
+    border: 2px solid;
+    transition: all .5s ease;
+  }
+
+  .btn--primary {
+    background-color: $primary-col;
+    border-color: $primary-col;
+    color: $white;
+
+    &:hover {
+      background-color: $primary-col--dark;
+      border-color: $primary-col--dark;
+    }
+
+  }
+
+  .btn--inverse {
+    color: $primary-col;
+    background-color: $white;
+    border-color: $primary-col;
+    &:hover {
+      background-color: $primary-col--dark;
+      border-color: $primary-col--dark;
+      color: $white;
+    }
+  }
+
+  .btn--grey {
+    color: $white;
+    background-color: $grey--light;
+    border-color: $grey--light;
+
+
+    &:hover {
+      background-color: $grey--dark;
+      border-color: $grey--dark;
+    }
+  }
+
+
+  .btn--outline {
+    border-color: $white;
+    color: $white;
+
+    &:hover {
+      border-color: darken($white,10%);
+      color: darken($white,10%);
+    }
+  }
