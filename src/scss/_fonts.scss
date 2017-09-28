@@ -1,4 +1,49 @@
-@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700|Open+Sans:300,600,600i');
 
 //Font Type
-$karla:  'Karla', sans-serif;
+$opensans:  'Open Sans', sans-serif;
+$monst: 'Montserrat', sans-serif;
+
+
+//For Extend
+.monst-thin {
+  font-family: $monst;
+  font-weight: 200;
+}
+
+.monst-light {
+  font-family: $monst;
+  font-weight: 300;
+}
+
+.monst {
+  font-family: $monst;
+  font-weight: 400;
+}
+
+.monst-med {
+  font-family: $monst;
+  font-weight: 500;
+}
+
+.monst-bold {
+  font-family: $monst;
+  font-weight: 700;
+}
+
+
+.open-light {
+  font-family: $opensans;
+  font-weight: 300;
+}
+
+.open-semi {
+  font-family: $opensans;
+  font-weight: 600;
+}
+
+.open-semi-italic {
+  font-family: $opensans;
+  font-weight: 600;
+  font-style: italic;
+}

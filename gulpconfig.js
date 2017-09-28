@@ -1,7 +1,7 @@
 // ==== CONFIGURATION ==== //
 
 // Project paths
-var project     = 'health-recruit',               // The directory name for your theme;
+var project     = 'henderson-health',               // The directory name for your theme;
     src         = './src/',               // The raw material of your theme: custom scripts, SCSS source files, PHP files, images, etc.; do not delete this folder!
     build       = './build/',             // A temporary directory containing a development version of your theme; delete it anytime
     dist        = './dist/'+project+'/',  // The distribution package that you'll be uploading to your server; delete it anytime
@@ -14,9 +14,9 @@ module.exports = {
   browsersync: {
     files: [build+'/**', '!'+build+'/**.map'], // Exclude map files
     notify: true, // In-line notifications (the blocks of text saying whether you are connected to the BrowserSync server or not)
-    open: true, // Set to false if you don't like the browser window opening automatically
+    open: false, // Set to false if you don't like the browser window opening automatically
     port: 3000, // Port number for the live version of the site; default: 3000
-    proxy: 'pg-healthrecruit:8888/', // We need to use a proxy instead of the built-in server because WordPress has to do some server-side rendering for the theme to work
+    proxy: '//henderson-healthcare:8888/', // We need to use a proxy instead of the built-in server because WordPress has to do some server-side rendering for the theme to work
     watchOptions: {
       debounceDelay: 2000 // This introduces a small delay when watching for file change events to avoid triggering too many reloads
     }
@@ -26,7 +26,7 @@ module.exports = {
     src: dist,
     // return gulp.src(dist)
       // pipe(deploy({
-        repository: 'https://github.com/isaacmartin/health-recruit.git'
+        repository: 'https://github.com/isaac-martin/henderson-health.git'
       // }));
   },
 

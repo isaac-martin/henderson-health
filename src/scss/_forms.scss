@@ -5,12 +5,12 @@ $placeholder-white: $white;
 
 
 form {
-  font-family: $karla;
+  font-family: $opensans;
   font-weight: 400;
 }
 
 input, textarea {
-  font-family: $karla;
+  font-family: $opensans;
   border: 1px solid;
   border-radius: 8px;
   padding: 12px 8px;
@@ -129,7 +129,7 @@ ul.oscFList li select{
   }
 
   .btn--inverse {
-    color: $primary-col;
+    color: $grey;
     cursor: pointer;
     text-align: center;
     // margin: 0 auto;
@@ -181,7 +181,7 @@ input[type=checkbox] {
 
 .ui-datepicker  {
   background-color: white;
-  border: 1px solid $primary-col;
+  border: 1px solid $grey;
   border-radius: 5px;
   padding: 5px;
 }

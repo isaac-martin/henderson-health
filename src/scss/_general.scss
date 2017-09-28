@@ -6,7 +6,7 @@ html {
 body {
   background: color(body-background);
   color: color(text);
-  font-family: $karla;
+  font-family: $opensans;
   line-height: 1.44444;
 }
 
@@ -70,7 +70,7 @@ img {
 }
 
 .green-bg {
-  background-color: $primary-col;
+  background-color: $grey;
   color: $white;
 }
 

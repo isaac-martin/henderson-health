@@ -6,12 +6,13 @@ var gulp     =    require('gulp'),
 
 // gulp.task('deploy', function(){
   gulp.task('deploy', ['dist'], () => {
-  return gulp.src('dist/ass-hub/**', { read: false })
+  return gulp.src('dist/**/**', { read: false })
     .pipe(deploy({
-       repository: 'https://github.com/isaac-martin/health-recruit.git',
+       repository: 'https://github.com/isaac-martin/henderson-health.git',
        message: 'build and push',
        verbose: true,
-       prefix: 'dist/health-recruit',
+       remoteBranch:   ['theme'],
+       prefix: 'dist/henderson-health',
       debug: true
     }))
 })
