@@ -1,34 +1,30 @@
 <?php get_header(); ?>
 <main class="site-main">
-    <section class="slider-wrapper inner-container">
-      <section class="slider">
-        <?php if( have_rows('hero_slider') ):
-             $count = 0;
-        while( have_rows('hero_slider') ): the_row();
-        $img = get_sub_field('bg_image');
-        $title = get_sub_field('text');
-        $subtext = get_sub_field('subtext');
-        $btnlink = get_sub_field('button_link');
-        $btntext = get_sub_field('button_text');
-        ?>
-        <div class="slide" <?php if (!$count) { ?> id="logotype"<?php } ?>>
-          <div class="hero-img" style="background-image:url(<?php echo $img ?>)">
-              <div class="grid-middle h100">
-                <div class="col-6" data-push-left="off-3_sm-0">
-                  <h2 class="slide-cta"><?php echo $title ?></h2>
-                  <img src="<?php bloginfo('template_directory'); ?>/imgs/logotype.png" class="slider-logotype" />
-                  <div class="slide-contet">
-                      <p><?php echo $subtext ?></p>
-                      <a class="btn" href="<?php echo $btnlink ?>"><?php echo $btntext ?></a>
-                  </div>
+  <section class="slider-wrapper">
+    <section class="slider">
+      <?php if( have_rows('hero_slider') ):
+      while( have_rows('hero_slider') ): the_row();
+      $img = get_sub_field('bg_image');
+      $title = get_sub_field('title');
+      $subtext = get_sub_field('subtext');
+      $btnlink = get_sub_field('button_link');
+      $btntext = get_sub_field('button_text');
+      ?>
+      <div class="slide">
+        <div class="hero-img" style="background-image:url(<?php echo $img ?>)">
+          <div class="inner-container">
+            <div class="grid-middle">
+              <div class="col">
+                <h2 class="slide-cta"><?php echo $title ?></h2>
+                <p class="slide-contet"><?php echo $subtext ?></p>
+                <a class="slide-btn" href="<?php echo $btnlink ?>"><?php echo $btntext ?></a>
               </div>
-              </div>
+            </div>
           </div>
         </div>
-      <?php endwhile;
-        $count++;
-        endif; ?>
-      </section>
+      </div>
+    <?php endwhile; ?>
+  <?php endif; ?>
     </section>
     <section class="icons-wrapper">
       <section class="icons">
@@ -81,7 +77,7 @@
       <section class="testimonials">
         <div class="inner-container">
           <div class="grid-middle">
-            <div class="col-8_sm-12 testSlider" data-push-left="off-2_sm-0">
+            <div class="col-8_sm-12" data-push-left="off-2_sm-0">
               <?php if( have_rows('testimonials') ):
               while( have_rows('testimonials') ): the_row();
                 $test = get_sub_field('testimonial');
@@ -97,5 +93,6 @@
         </div>
       </section>
     </section>
+  </section>
 </main>
 <?php get_footer(); ?>

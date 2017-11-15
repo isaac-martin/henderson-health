@@ -47,6 +47,9 @@ function health_widgets_init() {
     'after_title'   => '</h2>'
   ) );
 }
+
+
+
 add_action( 'widgets_init', 'health_widgets_init' );
 
 function cc_mime_types( $mimes ){
@@ -54,3 +57,7 @@ $mimes['svg'] = 'image/svg+xml';
 return $mimes;
 }
 add_filter( 'upload_mimes', 'cc_mime_types' );
+
+
+
+//Bullshit Redirect
