@@ -6,11 +6,15 @@
       <div class="col-6" data-push-left="off-1_sm-0">
         <?php get_template_part( 'loop' ); ?>
 
-        <?php get_template_part( 'pagination' ); ?>
+        <?php// get_template_part( 'pagination' ); ?>
       </div>
       <div class="col-3">
-        <?php get_sidebar(); ?>
+        Sidebar content here
       </div>
     </div>
 </div>
+
+
+
+
 <?php get_footer(); ?>
