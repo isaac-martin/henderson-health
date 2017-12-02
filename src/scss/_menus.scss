@@ -15,8 +15,28 @@
         margin-right: 0;
       }
     }
+
+  li:hover > ul {
+        display: block;
+        visibility: visible;
+      }
+
     > li > ul {
-      @extend %hide; // Hide submenus for the sake of simplicity; obviously you'd want to remove this when you apply your own styling
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    padding-top: 40px;
+    top: -10px;
+    li {
+      margin: 0;
+      text-align: left;
+      margin-right: 20px;
+      font-family: $opensans;
+      a {
+        font-weight: 300;
+        text-transform: capitalize;
+      }
+    }
     }
   }
 }

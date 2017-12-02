@@ -4,18 +4,24 @@
 // There is also a fifth meta-wrapper to bind content and sidebar on large screens
 
 // A general wrapper for various site elements
+
+.inner-container {
+  max-width: 1500px;
+  padding: 30px;
+  margin: 0 auto;
+}
 %wrap {
   box-sizing: border-box; // Makes life a little easier
-  padding: 0 spacer() 0 spacer();
+  padding: 0;
 }
 .wrap-header {
+  z-index: 99;
+  height: 100px;
   @extend %wrap;
   background: color(header-background);
-  padding-bottom: spacer(1/6);
-  padding-top: spacer(1/2);
   @include media-above($break-large) {
-    padding-left: spacer(2);
-    padding-right: spacer(2);
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .container { // Wrapper around content and sidebar
@@ -37,15 +43,15 @@
 }
 .wrap-footer {
   @extend %wrap;
-  background: $grey;
-  padding-bottom: spacer(2);
-  padding-top: spacer(1/2);
+    background: color(footer-background);
+  padding-bottom: spacer(1);
+  padding-top: spacer(1);
   @include media-above($break-large) {
     padding-left: spacer(2);
     padding-right: spacer(2);
   }
   @include media-below($break-medium) {
-    padding-bottom: spacer(3.5);
+    padding-bottom: spacer(1);
   }
 }
 .site-header,
@@ -78,4 +84,137 @@
 }
 .alignleft {
   float: left;
+}
+
+
+.grey-bg {
+  background: $grey-light;
+}
+
+.fullW {
+  width: 100vw;
+  display: inline-block;
+  position: relative;
+}
+
+.site-main{
+  padding-top: 80px;
+}
+
+.jobs-container {
+  padding-top: 0;
+}
+
+.page-id-46 {
+  .inner-container {
+    padding-bottom: 0;
+  }
+}
+
+.ja-job-search {
+@extend .grey-bg;
+padding: 30px;
+}
+
+.ja-field-container {
+  width: 20%;
+  display: inline-block;
+  float: left;
+  label {
+    display: none;
+  }
+  label[for="ja-keywords"] {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  select {
+    background: white;
+    border: 1px solid black;
+    padding: 20px 10px;
+    width: 90%;
+    font-family: $opensans;
+    height: 40px;
+    margin-top: 20px;
+  }
+
+}
+
+.ja-submit {
+  width: 100%;
+  display: inline-block;
+  right: 0;
+  .ja-button {
+      border: none;
+      text-align: center;
+      width: 260px;
+      padding: 15px 40px;
+      margin: 20px auto 0 auto;
+      display: block;
+  }
+
+}
+
+
+.ja-job-list-container, .ja-job-details {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 80px;
+
+  .job {
+    margin-bottom: 60px;
+  }
+}
+
+.classifications {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  li {
+    display: inline-block;
+    border: 1px solid $grey-light;
+    border-radius: 20px;
+    background: $grey-light;
+    padding: 8px 20px;
+    margin-right: 10px;
+    font-size: 13px;
+    // color: white;
+
+  }
+}
+
+.powered-by-jobadder {
+  display: none;
+}
+
+.title {
+  a {
+    color: $grey;
+  }
+}
+
+.ja-pager-summary {
+  display: none;
+}
+
+.ja-pager {
+      margin-left: -40px;
+  span , a {
+    background: $primary-org;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    margin-right: 8px;
+  }
+
+  a {
+    background: rgba(240,114,70,0.5)
+  }
+}
+
+.back-link {
+    display: block;
+    margin: 10px 0;
+    color: $grey;
+    font-weight: 600;
 }

@@ -59,8 +59,13 @@ img {
 }
 
 
+
 //Header
 
+
+.h100 {
+  height: 100%;
+}
 .logo {
   width: 100%;
 
@@ -69,125 +74,105 @@ img {
   }
 }
 
-.green-bg {
-  background-color: $grey;
+
+
+.image-header {
+  height: 180px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  color: white;
+  background-size: cover;
+  background-image: url('imgs/henderson-about-header.jpg');
+
+}
+
+.icon-text {
+  vertical-align: middle;
+}
+
+
+.site-footer {
   color: $white;
-}
-
-
-//How It Works
-
-.how-it-works {
-    h3 {
-      text-align: center;
-      height: 60px;
-      font-size: 20px;
-    }
-    .icon {
-    width: 50%;
-    margin: 0 auto;
-    display: block;
-    }
-}
-// Team
-
-.team {
-  margin: 0;
-  padding: 0;
-
-  li {
-  // list-style-type: disc;
-  display: inline-block;
-  // margin: 0 20px 0 0;
-  width: 30%;
-  font-size: 22px;
-  font-weight: 700;
-
-  @include media-below($break-medium) {
-    width: 48%;
+  a {
+    color: white;
   }
 
-  @include media-below($break-small) {
-    width: 100%;
-    font-size: 16px;
+  h2 {
+    margin: 0 0 15px 0;
+    font-weight: 300;
+    font-size: 22px;
   }
 
-}
-}
+  h3 {
+    margin: 0 0 15px 0;
+    font-size: 24px;
+  }
 
-//Footer
+  .footer-email {
+    color: $primary-org;
+  }
 
-#site-footer-navigation {
-  display: inline-block;
-position: relative;
-float: left;
-}
-
-#menu-footer {
-  li {
-    a {
-        color: $white;
+  .footer-linkedin {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    i {
+      margin-left: 15px;
+      vertical-align: middle;
     }
   }
 }
 
 .copyright {
-  color: $white;
-  display: inline-block;
-  position: relative;
-  float: right;
-
-  @include media-below($break-medium) {
-  float: left;
+  font-size: 14px;
+  a {
+    margin-right: 10px;
   }
 }
 
-.site-main {
-  min-height: calc(100vh - 165px);
-
-  @include media-below($break-medium) {
-  padding-top: 60px;
-  }
-
-  .container {
-    padding: 20px;
-  }
+.hero-text-wrap {
+  padding: 40px;
+  margin-bottom: 100px;
 }
 
-label {
-  font-size: 15px;
-  @include media-below($break-medium) {
-  font-size: 11px;
-  }
+.background-grid {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-.byline {
+.btn-wrap {
+  margin-top: 60px;
+}
+
+
+.content-list {
+  margin: 0 auto;
+  padding: 0;
   display: block;
-    margin-left: 28px;
-    font-size: 12px;
-    margin-top: -10px;
+  li {
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    margin: 0 0 10px 0;
+    padding: 0 0 0 2%;
+    &:before {
+    content: '';
+    margin-right: 0.5em;
+    background-color: $text_blue;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    left: -8px;
+    top: 8px;
+  }
+  }
 
-    @include media-below($break-medium) {
-    font-size: 10px;
+  &.halfs {
+    li {
+      width: 42%;
     }
-}
-}
-
-.or {
-  font-weight: 700;
-  text-decoration: underline;
-}
-
-
-.google-maps {
-        position: relative;
-        padding-bottom: 75%; // This is the aspect ratio
-        height: 0;
-        overflow: hidden;
- iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100% !important;
-        height: 100% !important;
-    }
+  }
 }

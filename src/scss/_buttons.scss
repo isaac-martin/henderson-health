@@ -1,55 +1,12 @@
-
-  .btn {
+.btn, .ja-button, .view-details {
     padding: 8px 25px;
+    letter-spacing: 1.3px;
     text-align: center;
-    font-weight: 400;
     border-radius: 8px;
-    border: 2px solid;
     transition: all .5s ease;
-  }
-
-  .btn--primary {
-    background-color: $grey;
-    border-color: $grey;
+    background: $primary-org;
     color: $white;
+    @extend .monst;
+    text-transform: uppercase;
 
-    &:hover {
-      background-color: $grey--dark;
-      border-color: $grey--dark;
-    }
-
-  }
-
-  .btn--inverse {
-    color: $grey;
-    background-color: $white;
-    border-color: $grey;
-    &:hover {
-      background-color: $grey--dark;
-      border-color: $grey--dark;
-      color: $white;
-    }
-  }
-
-  .btn--grey {
-    color: $white;
-    background-color: $grey--light;
-    border-color: $grey--light;
-
-
-    &:hover {
-      background-color: $grey--dark;
-      border-color: $grey--dark;
-    }
-  }
-
-
-  .btn--outline {
-    border-color: $white;
-    color: $white;
-
-    &:hover {
-      border-color: darken($white,10%);
-      color: darken($white,10%);
-    }
-  }
+}

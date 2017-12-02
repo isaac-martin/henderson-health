@@ -47,6 +47,9 @@ function health_widgets_init() {
     'after_title'   => '</h2>'
   ) );
 }
+
+
+
 add_action( 'widgets_init', 'health_widgets_init' );
 
 function cc_mime_types( $mimes ){
@@ -54,3 +57,19 @@ $mimes['svg'] = 'image/svg+xml';
 return $mimes;
 }
 add_filter( 'upload_mimes', 'cc_mime_types' );
+
+
+function pagination() {
+    global $wp_query;
+    $big = 999999999;
+    echo paginate_links( array(
+        'base'    => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
+        'format'  => '?paged=%#%',
+        'current' => max( 1, get_query_var( 'paged' ) ),
+        'total'   => $wp_query->max_num_pages,
+    ) );
+}
+
+
+
+//Bullshit Redirect

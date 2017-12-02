@@ -4,7 +4,7 @@
 $primary-org: #f07246;
 $text-blue: #006bff;
 $text-blue-light: #0fc0f2;
-$primary-org: #01949D;
+$primary-org: #f07246;
 $grey: #5F5F5F;
 $grey-light: #e8e8e8;
 $white: #FFFFFF;
@@ -39,7 +39,8 @@ $_color: (
   link: $text-blue,
   link-muted: $text-blue,
   body-background: $white,
-  header-background: $white
+  header-background: $white,
+  footer-background: $grey-blue
 );
 
 // Metadata; use metadata() to access
