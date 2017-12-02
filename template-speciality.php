@@ -16,7 +16,7 @@
         <h2 class="center">We Focus On</h2>
       </div>
       <div class="col-6" data-push-left="off-3_sm-0">
-        <ul>
+        <ul class="content-list halfs">
         <?php if( have_rows('focus_points') ):
         while( have_rows('focus_points') ): the_row();
         $point = get_sub_field('point');

@@ -45,7 +45,7 @@
       <?php endwhile; ?>
     <?php endif; ?>
     <div class="col-12 center">
-      <a href="/register" class="btn btn-primary">Register</a>
+      <a href="/register" class="btn btn-secondary">Register</a>
     </div>
       </div>
     </div>
