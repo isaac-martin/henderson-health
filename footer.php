@@ -15,7 +15,7 @@
               Blog Posts Here
             </div>
             <div class="col-1" data-push-left="off-1_sm-0">
-              <img src="<?php bloginfo('url'); ?>/wp-content/themes/henderson/build/imgs/icon.png" class="logo-icon">
+              <img src="<?php bloginfo('template_directory'); ?>/imgs/icon.png" class="logo-icon">
             </div>
           </div>
         </footer>
