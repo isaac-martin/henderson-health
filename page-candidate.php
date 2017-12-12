@@ -24,7 +24,7 @@
     <div class="container">
       <div class="grid-middle">
         <div class="col-12">
-          <h3 class="center">Our Approach</h3>
+          <h3 class="center"><?php the_field('icon_title');?></h3>
         </div>
         <?php if( have_rows('our_approach') ):
         while( have_rows('our_approach') ): the_row();
