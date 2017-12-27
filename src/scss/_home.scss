@@ -22,6 +22,11 @@
   right: 0;
   vertical-align: middle;
   padding: 135px 0 0 0;
+  transition: .5s all ease;
+  
+  &:hover {
+    background: rgba(0,0,0, 0.2);
+  }
 }
 .bgimg {
   background-size: cover;
@@ -38,7 +43,14 @@
   width: 100%;
   height: auto;
   padding: 150px 0;
+  transition: .5s all ease;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
 }
+
+
 
 .testimonial {
 
@@ -61,8 +73,7 @@
 
 .testimonials {
   .slick-dots {
-    margin-top: 30px;
-    bottom: 0;
+    bottom: -30px;
     li {
       button{
         &:before{

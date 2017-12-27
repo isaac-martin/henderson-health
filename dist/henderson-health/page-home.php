@@ -2,17 +2,18 @@
 <main class="site-main">
     <section class="slider-wrapper inner-container">
       <section class="slider">
-        <?php if( have_rows('hero_slider') ):
-             $count = 0;
+        <?php if( have_rows('hero_slider') ):$i = 0;
         while( have_rows('hero_slider') ): the_row();
         $img = get_sub_field('bg_image');
+        $img_mob = get_sub_field('bg_image_mob');
         $title = get_sub_field('text');
         $subtext = get_sub_field('subtext');
         $btnlink = get_sub_field('button_link');
         $btntext = get_sub_field('button_text');
+        $i++;
         ?>
-        <div class="slide" <?php if (!$count) { ?> id="logotype"<?php } ?>>
-          <div class="hero-img" style="background-image:url(<?php echo $img ?>)">
+        <div class="slide" <?php if (!$i) { ?> id="logotype"<?php } ?>>
+          <div class="hero-img img-<?php echo $i; ?>">
               <div class="grid-middle h100">
                 <div class="col-6" data-push-left="off-3_sm-0">
                   <h2 class="slide-cta"><?php echo $title ?></h2>
@@ -23,10 +24,22 @@
                   </div>
               </div>
               </div>
+              <style>
+              .img-<?php echo $i; ?> {
+                  background-image: url('<?php echo $img; ?>');
+              }
+              
+              @media screen and (max-width: 48em) {
+            .img-<?php echo $i; ?> {
+                  background-image: url('<?php echo $img_mob; ?>');
+              }
+          }
+              
+              </style>
           </div>
         </div>
       <?php endwhile;
-        $count++;
+        
         endif; ?>
       </section>
     </section>

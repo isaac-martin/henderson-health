@@ -87,6 +87,11 @@ img {
 
 }
 
+@media screen and (max-width: 48em) {
+  .image-header{
+    background-image: url('imgs/henderson-about-header-mob.jpg');
+  }
+}
 .icon-text {
   vertical-align: middle;
 }
@@ -173,6 +178,46 @@ img {
   &.halfs {
     li {
       width: 42%;
+      
+      @include media-below($break-medium) {
+        width: 90%;
+      }
     }
+  }
+}
+
+
+.contact-phone {
+  margin: 0 0 5px 0;
+  color: $text-blue;
+  font-size: 22px;
+}
+
+.email {
+
+}
+
+.address {
+    margin-top: 40px;
+}
+
+.google-maps i {
+  margin-right: 10px;
+}
+
+
+.contact-social {
+  margin: 60px 0 0 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .8em;
+  i {
+    margin-left: 10px;
+  }
+}
+
+.img-wrap {
+  @include media-below($break-medium) {
+    padding: 0;
   }
 }

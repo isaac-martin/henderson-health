@@ -6,7 +6,7 @@
 // A general wrapper for various site elements
 
 .inner-container {
-  max-width: 1500px;
+  max-width: 1200px;
   padding: 30px;
   margin: 0 auto;
 }
@@ -144,7 +144,9 @@ padding: 30px;
   width: 100%;
   display: inline-block;
   right: 0;
+  cursor: pointer;
   .ja-button {
+    cursor: pointer;
       border: none;
       text-align: center;
       width: 260px;
@@ -176,7 +178,7 @@ padding: 30px;
     border-radius: 20px;
     background: $grey-light;
     padding: 8px 20px;
-    margin-right: 10px;
+    margin: 0 10px 10px 0;
     font-size: 13px;
     // color: white;
 
@@ -212,9 +214,134 @@ padding: 30px;
   }
 }
 
+
+.site-footer {
+  @media screen and (max-width: 48em) {
+  padding: 20px;
+}
+}
+
+.apply {
+  margin: 20px 0;
+  
+  .ja-button {
+    margin: 0;
+    padding: 12px 25px;
+    height: 45px
+    
+  }
+}
 .back-link {
-    display: block;
-    margin: 10px 0;
-    color: $grey;
+    display: inline-block;
+      height: 45px;
     font-weight: 600;
+    border: 2px solid $primary-org;
+    padding: 12px 25px;
+    letter-spacing: 1.3px;
+    text-align: center;
+    border-radius: 8px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    color: $primary-org;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.slide-wrap {
+  padding: 20px;
+}
+
+
+article.post {
+  margin: 0 0 50px 0;
+}
+.post-title {
+  @extend .monst-light;
+  margin: 1rem 0;
+  
+  a {
+    color: $grey;
+  }
+}
+
+
+
+.pagination {
+  span , a {
+    background: $primary-org;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    margin-right: 8px;
+  }
+
+  a, .dots {
+    background: rgba(240,114,70,0.5);
+    
+    &:hover {
+      background: rgba(240,114,70,0.8)
+    }
+  }
+}
+
+.cat-list, .arch-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  li a{
+    color: $grey;
+  }
+  
+  .current-cat a {
+      color: $primary-org;
+  }
+}
+
+.footer-post-wrap {
+  margin: 0 0 20px 0;
+  .date {
+    font-style: italic;
+    display: block;
+    font-size: .7rem;
+    @extend .monst-light;
+  }
+}
+
+.site-footer {
+.footer-news {
+  text-transform: uppercase;
+  font-size: .8em;
+}
+}
+
+.footer-logo-wrap {
+  position: relative;
+  img {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+  }
+}
+
+  @media screen and (max-width: 48em) {
+    .footer-logo-wrap {
+      img {
+        bottom: 0;
+        left: 15px;
+      }
+  }
+}
+
+
+.professions {
+  .inner-container {
+      @include media-below($break-medium) {
+        padding: 0;
+      }
+  }
+}
+
+
+.pagination {
+  margin-top: 50px;
 }

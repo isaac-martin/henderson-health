@@ -1,15 +1,44 @@
 <?php get_header(); ?>
 <main class="site-main">
-  <?php include 'inc/imgheader.php'; ?>
-  <div class="container">
-    <div class="grid-middle">
-      <div class="col-6" data-push-left="off-1_sm-0">
-        <?php get_template_part( 'loop' ); ?>
+  <?php if( get_field('header_image','36') ): ?>
+  <style>
+    .image-header {
+      background-image: url('<?php the_field('header_image','36');?>');
+    }
 
-        <?php get_template_part( 'pagination' ); ?>
+  @media screen and (max-width: 48em) {
+    .image-header{
+      background-image: url('<?php the_field('header_image_mobile','36');?>');
+    }
+  }
+  </style>
+
+  <?php endif; ?>
+  <div class="inner-container">
+      <section class="image-header imgwrap">
+          <div class="grid-middle h100">
+            <div class="col">
+              <h1><?php single_post_title(); ?></h1>
+            </div>
+          </div>
+      </section>
+  </div>
+
+  
+  
+  <div class="container">
+    <div class="grid">
+      <div class="col-6" data-push-left="off-1_sm-0">
+        <div class="inner-container">
+          <?php get_template_part( 'loop' ); ?>
+          <?php get_template_part( 'pagination' ); ?>
+        </div>
+
       </div>
       <div class="col-3">
+                <div class="inner-container">
         <?php get_sidebar(); ?>
+      </div>
       </div>
     </div>
 </div>

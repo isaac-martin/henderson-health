@@ -29,6 +29,20 @@
     margin: 0 auto;
     width: 180px;
   }
+  
+  .slick-dots {
+    li button {
+      background: $white;
+      opacity: 0.5;
+      height: 6px;
+      width: 6px;
+      padding: 4px;
+    }
+    
+    .slick-active button {
+      opacity: 1;
+    }
+  }
 }
 
 
@@ -36,7 +50,14 @@
   @extend .monst-thin;
 }
 
-.slide-cta {  font-size: 3.6rem; line-height: 4.2rem;}
+.slide-cta {  
+  font-size: 3.6rem; line-height: 4.2rem;
+  @include media-below($break-medium) {
+      font-size: 2.8rem; line-height: 3.6rem;
+  }
+}
+
+
 
 .slick-slide {
   .slider-logotype {

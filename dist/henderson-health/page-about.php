@@ -35,22 +35,27 @@
       </div>
     </div>
   </section>
-
+  
+  <?php if( have_rows('team') ):?>
   <section class="melInfo">
     <div class="container">
+          <?php while ( have_rows('team') ) : the_row();?>
       <div class="grid-middle">
         <div class="col-2" data-push-left="off-2_sm-0">
-          <img class="headshot" src="<?php the_field('mel_headhshot'); ?>">
+          <img class="headshot" src="<?php the_field('headhshot'); ?>">
         </div>
         <div class="col-7" data-push-left="off-1_sm-0">
-          <h3 class="name">Mel Henderson</h3>
-          <h5><?php the_field('title'); ?></h5>
+          <h3 class="name"><?php the_sub_field('name'); ?></h3>
+          <h5><?php the_sub_field('title'); ?></h5>
           <p>
-            <?php the_field('description'); ?>
+            <?php the_sub_field('description'); ?>
           </p>
         </div>
       </div>
+      <?php endwhile; ?>
     </div>
   </section>
+
+<?php endif; ?>
 </main>
 <?php get_footer(); ?>

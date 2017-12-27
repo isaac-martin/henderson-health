@@ -1,5 +1,5 @@
-.btn, .ja-button, .view-details {
-    padding: 8px 25px;
+.btn, .ja-button, .view-details, .gform_button, strong a {
+    padding: 12px 25px;
     letter-spacing: 1.3px;
     text-align: center;
     border-radius: 8px;
@@ -9,4 +9,26 @@
     @extend .monst;
     text-transform: uppercase;
 
+}
+
+
+.news-btn {
+  padding: 15px 25px;
+  font-size: .8rem;
+  display: inline-block;
+  margin: 10px 0
+}
+
+
+
+.search-form {
+  display: block;
+  position: relative;
+.search-icon {
+  position: absolute;
+  display: block;
+  right: 10px;
+  top: 15px;
+  border: none;
+}
 }

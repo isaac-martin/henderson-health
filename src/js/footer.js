@@ -15,7 +15,6 @@
     infinite: false
   });
 
-  $( "strong a" ).addClass( "btn btn-primary" );
 
 
   $('.testSlider').slick({
