@@ -3,8 +3,10 @@
     <?php include 'inc/imgheader.php'; ?>
     <div class="container">
       <div class="grid">
-        <div class="col-8" data-push-left="off-2_sm-0">
-          <?php echo do_shortcode( '[gravityform id="2" title=""]' ); ?>
+        <div class="col-8_sm-12" data-push-left="off-2_sm-0">
+          <div class="inner-container">
+              <?php echo do_shortcode( '[gravityform id="3" title=""]' ); ?>
+          </div>
         </div>
       </div>
   </div>

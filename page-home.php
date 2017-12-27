@@ -15,14 +15,16 @@
         <div class="slide" <?php if (!$i) { ?> id="logotype"<?php } ?>>
           <div class="hero-img img-<?php echo $i; ?>">
               <div class="grid-middle h100">
-                <div class="col-6" data-push-left="off-3_sm-0">
+                <div class="col-6_sm-12 slide-wrap" data-push-left="off-3_sm-0">
+                    <div class="slide-wrap">
                   <h2 class="slide-cta"><?php echo $title ?></h2>
                   <img src="<?php bloginfo('template_directory'); ?>/imgs/logotype.png" class="slider-logotype" />
                   <div class="slide-contet">
                       <p><?php echo $subtext ?></p>
                       <a class="btn" href="<?php echo $btnlink ?>"><?php echo $btntext ?></a>
                   </div>
-              </div>
+              </div>  
+          </div>
               </div>
               <style>
               .img-<?php echo $i; ?> {
