@@ -3,8 +3,10 @@
     <?php include 'inc/imgheader.php'; ?>
     <div class="container">
       <div class="grid-middle">
-        <div class="col-8" data-push-left="off-2_sm-0">
-          <?php the_field('page_intro'); ?>
+        <div class="col-8_sm-12" data-push-left="off-2_sm-0">
+          <div class="inner-container">
+            <?php the_field('page_intro'); ?>
+          </div>
         </div>
       </div>
   </div>
@@ -12,7 +14,7 @@
   <section>
     <div class="inner-container">
       <div class="grid background-grid" style="background-image:url(<?php the_field('hero_image_background');?>">
-        <div class="col-4 hero-text-wrap">
+        <div class="col-4_sm-12 hero-text-wrap">
           <h2><?php the_field('text_title_copy');?></h2>
           <p><?php the_field('text_content');?></p>
         </div>
@@ -24,6 +26,7 @@
     <div class="container">
       <div class="grid-middle">
         <div class="col-12">
+            <div class="inner-container">
           <h3 class="center"><?php the_field('icon_title');?></h3>
         </div>
         <?php if( have_rows('our_approach') ):
@@ -47,6 +50,7 @@
     <div class="col-12 center">
       <a href="/register" class="btn btn-secondary">Register</a>
     </div>
+  </div>
       </div>
     </div>
   </section>

@@ -67,6 +67,8 @@ function pagination() {
         'format'  => '?paged=%#%',
         'current' => max( 1, get_query_var( 'paged' ) ),
         'total'   => $wp_query->max_num_pages,
+        'prev_text' => '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+        'next_text' => '<i class="fa fa-angle-right" aria-hidden="true"></i>'    
     ) );
 }
 

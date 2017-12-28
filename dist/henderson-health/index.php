@@ -15,7 +15,7 @@
 
   <?php endif; ?>
   <div class="inner-container">
-      <section class="image-header">
+      <section class="image-header imgwrap">
           <div class="grid-middle h100">
             <div class="col">
               <h1><?php single_post_title(); ?></h1>
@@ -27,13 +27,18 @@
   
   
   <div class="container">
-    <div class="grid-middle">
+    <div class="grid">
       <div class="col-6" data-push-left="off-1_sm-0">
-        <?php get_template_part( 'loop' ); ?>
-        <?php get_template_part( 'pagination' ); ?>
+        <div class="inner-container">
+          <?php get_template_part( 'loop' ); ?>
+          <?php get_template_part( 'pagination' ); ?>
+        </div>
+
       </div>
       <div class="col-3">
+                <div class="inner-container">
         <?php get_sidebar(); ?>
+      </div>
       </div>
     </div>
 </div>

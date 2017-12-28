@@ -12,7 +12,7 @@
 </style>
 
 <?php endif; ?>
-<div class="inner-container">
+<div class="inner-container img-wrap">
     <section class="image-header">
         <div class="grid-middle h100">
           <div class="col">
