@@ -23,7 +23,7 @@
       nav.style.display = 'none';
       button.className = button.className.replace(' active', '');
     } else {
-      nav.style.display = 'block';
+      nav.style.display = 'inline-block';
       button.className += ' active';
     }
   };

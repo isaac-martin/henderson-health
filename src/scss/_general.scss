@@ -14,10 +14,27 @@ h1,
 h2,
 h3,
 {
-  font-weight: bold;
   line-height: 1.22222;
+  font-family: $monst;
 }
 
+
+h1 {
+    @extend .monst-med;
+}
+h2,h3,h4 {
+  @extend .monst-light;
+}
+
+
+.footer-phone {
+  font-family: $opensans;
+  font-weight: 600;
+}
+
+.footer-linkedin {
+    font-family: $monst;
+}
 
 h4,
 h5,
@@ -172,7 +189,16 @@ img {
     display: block;
     left: -8px;
     top: 8px;
+    @include media-below($break-medium) {
+      height: 6px;
+      width: 6px;
+    }
   }
+  @include media-below($break-medium) {
+    width: 90%;
+    margin-left: 3%;
+  }
+  
   }
 
   &.halfs {

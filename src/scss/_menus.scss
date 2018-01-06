@@ -19,14 +19,22 @@
   li:hover > ul {
         display: block;
         visibility: visible;
+        
+          @include media-below($break-medium) {
+            display: none;
+            visibility: hidden;
+          }
+              
       }
 
-    > li > ul {
+    .sub-menu {
     display: none;
     visibility: hidden;
     position: absolute;
     padding-top: 0;
     top: 30px;
+
+    
     li {
       margin: 0;
       text-align: left;
@@ -41,9 +49,64 @@
   }
 }
 
+
+
+
+.sub-menu-active {
+  color: $primary-org;
+  
+  a {
+    padding-bottom: 0!important;
+  }
+    .sub-menu {
+  display: block!important;
+  visibility: visible!important;
+  position: relative!important;
+  top: 0;
+  
+  li {
+    margin-bottom: 0!important;
+    margin-top: 0!important;
+    padding-top: 10px!important;
+  }
+}
+}
+
+.menu-item-has-children {
+    @include media-below($break-medium) {
+        position: relative;
+      .fa{
+        display: inline-block;
+        float: right;
+        width: 40px;
+        position: absolute;
+        top: 15px;
+        right: 0;
+        z-index: 100;
+        
+        &:active {
+          color: $primary-org;
+        }
+        }
+      }
+    &.sub-menu-active {
+      span {
+          content: '';
+      }
+    }
+    
+    .fa {
+    @include media-above($break-medium) {
+      display: none!important;
+    }
+  }
+  }
+
 // Menu toggle for mobile phones and small screens
 #responsive-menu-toggle {
   @include media-above($break-medium) {
     display: none;
   }
 }
+
+

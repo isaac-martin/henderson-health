@@ -221,3 +221,21 @@ body .gform_wrapper .top_label div.ginput_container {
        height: 320px!important;
        width: 100%!important;
    }
+   
+   
+   .ginput_container.ginput_container_fileupload {
+     input {
+       border: none!important;
+     }
+   }
+
+.gfield_select {
+  border: 1px solid $grey!important;
+  border-radius: 5px!important;
+}
+
+
+.ginput_container .ginput_container_select {
+  border: 1px solid $grey;
+  border-radius: 5px;
+}

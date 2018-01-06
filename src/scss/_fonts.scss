@@ -47,3 +47,9 @@ $monst: 'Montserrat', sans-serif;
   font-weight: 600;
   font-style: italic;
 }
+
+.icon-intro-blue {
+  text-transform: uppercase;
+  color: $text-blue;
+  @extend .monst-bold;
+}
