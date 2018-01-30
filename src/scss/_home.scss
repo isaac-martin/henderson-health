@@ -1,6 +1,9 @@
 .icons {
   width: 80%;
-  margin: 40px auto;
+  margin: 45px auto;
+  .col, [class*=col-] {
+    padding-bottom: 0;
+  }
 }
 
 .icon {
@@ -13,7 +16,7 @@
   color: white;
   text-align: center;
   @extend .monst-med;
-  background: rgba(0,0,0, 0.7);
+  background: rgba(0,0,0, 0.45);
   display: inline-block;
   position: absolute;
   top: 0;
@@ -21,9 +24,10 @@
   bottom: 0;
   right: 0;
   vertical-align: middle;
-  padding: 135px 0 0 0;
+  padding: 115px 0 0 0;
   transition: .5s all ease;
-  
+  font-size: 18px;
+
   &:hover {
     background: rgba(0,0,0, 0.2);
   }
@@ -41,10 +45,10 @@
   right: 0;
   bottom: 0;
   width: 100%;
-  height: auto;
-  padding: 150px 0;
+  height: 245px;
+  // padding: 150px 0;
   transition: .5s all ease;
-  
+
   &:hover {
     transform: scale(1.05);
   }
@@ -59,21 +63,23 @@
   }
   color: $text-blue;
   .test {
-    font-size: 22px;
+    font-size: 24px;
+    line-height: 30px;
     display: block;
   }
 
   .author {
-    font-weight: 700;
+    font-weight: 600;
     display: block;
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 .testimonials {
+      padding-bottom: 45px;
   .slick-dots {
-    bottom: -30px;
+    bottom: -65px;
     li {
       button{
         &:before{

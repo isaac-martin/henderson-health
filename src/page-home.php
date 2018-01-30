@@ -19,29 +19,29 @@
                     <div class="slide-wrap">
                   <h2 class="slide-cta"><?php echo $title ?></h2>
                   <img src="<?php bloginfo('template_directory'); ?>/imgs/logotype.png" class="slider-logotype" />
-                  <div class="slide-contet">
+                  <div class="slide-content">
                       <p><?php echo $subtext ?></p>
                       <a class="btn" href="<?php echo $btnlink ?>"><?php echo $btntext ?></a>
                   </div>
-              </div>  
+              </div>
           </div>
               </div>
               <style>
               .img-<?php echo $i; ?> {
                   background-image: url('<?php echo $img; ?>');
               }
-              
+
               @media screen and (max-width: 48em) {
             .img-<?php echo $i; ?> {
                   background-image: url('<?php echo $img_mob; ?>');
               }
           }
-              
+
               </style>
           </div>
         </div>
       <?php endwhile;
-        
+
         endif; ?>
       </section>
     </section>
@@ -55,7 +55,7 @@
             $text = get_sub_field('text');
             $link = get_sub_field('link');
             ?>
-            <div class="col-3_sm-6">
+            <div class="col-3_sm-6 reveal">
               <a class="center" href="<?php echo $link ?>">
                 <img class="icon" src="<?php echo $icon ?>">
                 <p class="icon-text center">

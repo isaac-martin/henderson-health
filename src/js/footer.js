@@ -24,7 +24,7 @@
     $(".menu-item-has-children").removeClass('sub-menu-active');
     $(this).closest(".menu-item-has-children").addClass('sub-menu-active');
   });
-  
+
   $('.sub-menu-active .fa-minus').click(function() {
     $(this).removeClass('fa-minus');
     $('.menu-item-has-children').removeClass('sub-menu-active');
@@ -35,6 +35,8 @@
   $('.testSlider').slick({
     arrows: false,
     dots: true,
-    infinite: false
+    infinite: false,
+    autoplay: true,
+autoplaySpeed: 10000,
   });
   })(jQuery, this);

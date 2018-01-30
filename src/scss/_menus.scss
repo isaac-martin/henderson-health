@@ -19,12 +19,12 @@
   li:hover > ul {
         display: block;
         visibility: visible;
-        
+
           @include media-below($break-medium) {
             display: none;
             visibility: hidden;
           }
-              
+
       }
 
     .sub-menu {
@@ -34,11 +34,11 @@
     padding-top: 0;
     top: 30px;
 
-    
+
     li {
       margin: 0;
       text-align: left;
-      margin-right: 20px;
+      margin-right: 40px;
       font-family: $opensans;
       a {
         font-weight: 300;
@@ -54,7 +54,7 @@
 
 .sub-menu-active {
   color: $primary-org;
-  
+
   a {
     padding-bottom: 0!important;
   }
@@ -63,7 +63,7 @@
   visibility: visible!important;
   position: relative!important;
   top: 0;
-  
+
   li {
     margin-bottom: 0!important;
     margin-top: 0!important;
@@ -83,7 +83,7 @@
         top: 15px;
         right: 0;
         z-index: 100;
-        
+
         &:active {
           color: $primary-org;
         }
@@ -94,7 +94,7 @@
           content: '';
       }
     }
-    
+
     .fa {
     @include media-above($break-medium) {
       display: none!important;
@@ -108,5 +108,3 @@
     display: none;
   }
 }
-
-

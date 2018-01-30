@@ -2,11 +2,16 @@
     li {
       a {
       color: $grey;
-      @extend .monst-med;
+      @extend .monst;
       text-transform: uppercase;
       text-align: center;
       padding: 0 3px 20px 0;
-      font-size: .8rem;
+      font-size: 14px;
+      transition: color .5s ease;
+
+      &:hover {
+        color: $primary-org;
+      }
     }
   }
 
@@ -152,7 +157,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 90px;
+  height: 138px;
   z-index: 99;
 }
 
@@ -160,7 +165,7 @@
   // padding-top: 30px;
   position: relative;
   width: 1200px;
-  top: 30px;
+  top: 45px;
   margin: 0 auto;
   display: block;
 }

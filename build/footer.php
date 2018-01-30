@@ -3,16 +3,16 @@
         <footer id="colophon" class="site-footer">
           <div class="grid">
             <div class="col-4_sm-12" data-push-left="off-1_sm-0">
-              <h2>Get In Touch</h2>
+              <h2>Get In touch</h2>
               <h3 class="footer-phone"><?php the_field('phone','15'); ?></h3>
               <a class="footer-email" href="mailto:<?php the_field('email','15'); ?>"><?php the_field('email','15'); ?></a>
               <p class="footer-linkedin">Connect With Us <a href="<?php the_field('linkedin','15'); ?>"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a><a href="<?php the_field('facebook','15'); ?>"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></p>
               <p class="copyright">
-                <a href="/privacy">Privacy Policy</a> &copy; Henderson Healthcare Pty Ltd <?php echo date('Y'); ?>
+                <a href="/privacy">Privacy Policy</a> &copy; Henderson Recruitment Pty Ltd <?php echo date('Y'); ?>
               </p>
             </div>
             <div class="col-4_sm-12" data-push-left="off-1_sm-0">
-              
+
               <h3 class="footer-news">News</h3>
               <?php // WP_Query arguments
 $args = array(
@@ -32,7 +32,7 @@ if ( $query->have_posts() ) {
   		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
       <span class="date"><?php the_date('F d');?></span>
     </div>
-<?php     
+<?php
 	}
 } else {
 	// no posts found
@@ -48,5 +48,11 @@ wp_reset_postdata(); ?>
         </footer>
       </div>
   <?php wp_footer(); ?>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script>
+  window.sr = ScrollReveal();
+sr.reveal('.reveal', { duration: 1000 });
+
+</script>
   </body>
 </html>

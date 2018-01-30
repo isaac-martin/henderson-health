@@ -15,10 +15,10 @@
   <div class="container">
     <div class="grid-middle">
       <div class="col-12">
-        
+
         <h2 class="center">We Focus On</h2>
       </div>
-      <div class="col-6_sm-12" data-push-left="off-3_sm-0">
+      <div class="col-8_sm-12" data-push-left="off-2_sm-0">
       <div class="inner-container">
         <ul class="content-list halfs">
         <?php if( have_rows('focus_points') ):

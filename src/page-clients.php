@@ -45,7 +45,7 @@
       ?>
       <div class="col-4_sm-12">
         <div class="inner-container">
-        <div class="icon-wrap">
+        <div class="icon-wrap reveal">
             <img class="icon" src="<?php echo $icon ?>">
         </div>
           <h4 class="center icon-intro"><?php echo $title ?></h4>
@@ -66,7 +66,7 @@
   <section>
     <div class="inner-container">
       <div class="grid background-grid" style="background-image:url(<?php the_field('hero_image_background');?>">
-        <div class="col-4_sm-12 hero-text-wrap">
+        <div class="col-4_sm-12 hero-text-wrap reveal">
           <h2><?php the_field('text_title');?></h2>
           <p><?php the_field('text_content');?></p>
         </div>

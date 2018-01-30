@@ -2,8 +2,9 @@
 <main class="site-main">
   <?php include 'inc/imgheader.php'; ?>
   <div class="container">
-          <div class="inner-container">
+    <div class="inner-container">
     <div class="grid">
+  
       
       <div class="col-6_sm-12" data-push-left="off-1_sm-0">
         <?php get_template_part( 'loop' ); ?>
@@ -19,4 +20,4 @@
 
 
 
-<?php  get_footer(); ?>
+<?php get_footer(); ?>
