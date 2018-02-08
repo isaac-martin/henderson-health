@@ -16,7 +16,7 @@
   <?php endif; ?>
   <div class="inner-container">
       <section class="image-header imgwrap">
-          <div class="grid h100">
+          <div class="grid-middle h100">
             <div class="col">
               <h1><?php single_post_title(); ?></h1>
             </div>
