@@ -6,7 +6,7 @@
       <section class="slider-wrapper inner-container">
         <section class="coming-soon-content">
           <div class="hero-img" style="background-image:url(/wp-content/uploads/2017/09/hh.jpg)">
-              <div class="grid-middle h100" style="padding: 20px;">
+              <div class="grid h100" style="padding: 20px;">
                 <div class="col-6_sm-12" data-push-left="off-3_sm-0">
                   <img src="<?php bloginfo('template_directory'); ?>/imgs/logotype.png" class="slider-logotype">
                   <div class="slide-content">

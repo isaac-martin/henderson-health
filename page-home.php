@@ -48,17 +48,17 @@
     <section class="icons-wrapper">
       <section class="icons">
         <div class="inner-container">
-          <div class="grid-middle">
+          <div class="grid">
             <?php if( have_rows('icon_group') ):
             while( have_rows('icon_group') ): the_row();
             $icon = get_sub_field('icon');
             $text = get_sub_field('text');
             $link = get_sub_field('link');
             ?>
-            <div class="col-3_sm-6 reveal">
+            <div class="col-3_sm-6 reveal icon-wrap">
               <a class="center" href="<?php echo $link ?>">
                 <img class="icon" src="<?php echo $icon ?>">
-                <p class="icon-text center">
+                <p class="icon-text center med-icon-text">
                   <?php echo $text ?>
                 </p>
               </a>
@@ -72,7 +72,7 @@
     <section class="professions-wrapper">
       <section class="professions">
         <div class="inner-container">
-          <div class="grid-middle">
+          <div class="grid">
             <?php if( have_rows('speciality_links') ):
             while( have_rows('speciality_links') ): the_row();
               $bgimg = get_sub_field('image');
@@ -95,7 +95,7 @@
     <section class="testWrapper">
       <section class="testimonials">
         <div class="inner-container">
-          <div class="grid-middle">
+          <div class="grid">
             <div class="col-8_sm-12 testSlider" data-push-left="off-2_sm-0">
               <?php if( have_rows('testimonials') ):
               while( have_rows('testimonials') ): the_row();
