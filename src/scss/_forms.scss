@@ -20,7 +20,17 @@ input, textarea {
   margin: 0 0 10px 0;
 }
 
+.gform_title {
+  display: none;
+}
 
+.gfield_required {
+  display: none;
+}
+
+.gfield_checkbox a {
+  color: $primary-org;
+}
 
 
 .grey-form {
@@ -221,8 +231,8 @@ body .gform_wrapper .top_label div.ginput_container {
        height: 320px!important;
        width: 100%!important;
    }
-   
-   
+
+
    .ginput_container.ginput_container_fileupload {
      input {
        border: none!important;

@@ -100,6 +100,11 @@
 
 .site-main{
   padding-top: 107px;
+
+
+    @include media-below($break-medium) {
+        padding-top: 60px;
+    }
 }
 
 .jobs-container {
@@ -121,6 +126,12 @@ padding: 30px;
   width: 20%;
   display: inline-block;
   float: left;
+
+    @include media-below($break-medium) {
+      width: 100%;
+    }
+
+
   label {
     display: none;
   }
@@ -164,6 +175,12 @@ padding: 30px;
   width: 60%;
   margin-left: 20%;
   margin-top: 80px;
+
+    @include media-below($break-medium) {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 80px
+    }
 
   .job {
     margin-bottom: 60px;
@@ -317,21 +334,38 @@ article.post {
 }
 
 .footer-logo-wrap {
-  position: relative;
-  img {
+    position: relative
+}
+
+.footer-logo-wrap svg {
     position: absolute;
     bottom: 0;
     left: 0;
-  }
+    width: 200px
 }
 
+.footer-logo-wrap svg .words {
+    display: none
+}
+
+@media screen and (max-width: 619px) {
+    .footer-logo-wrap svg {
+        position:relative;
+        margin-top: 30px;
+        left: 0!important
+    }
+
+    .footer-logo-wrap svg .words {
+        display: block
+    }
+}
+
+
   @media screen and (max-width: 48em) {
-    .footer-logo-wrap {
-      img {
-        bottom: 0;
-        left: 15px;
-      }
-  }
+    .footer-logo-wrap {svg {
+        bottom:0;
+        left: 15px
+    }}
 }
 
 

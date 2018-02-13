@@ -53,3 +53,10 @@ $monst: 'Montserrat', sans-serif;
   color: $text-blue;
   @extend .monst-bold;
 }
+
+p {
+  margin: 0 0 30px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -.6px;
+}

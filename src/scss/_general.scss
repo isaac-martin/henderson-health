@@ -117,7 +117,8 @@ h1 {
   vertical-align: middle;
   margin-bottom: 0;
   font-size: 18px;
-  @extend .monst-med;
+  margin-top: 10px;
+  // @extend .monst-med;
 }
 
 
@@ -200,9 +201,9 @@ h1 {
     &:before {
     content: '';
     margin-right: 0.5em;
-    background-color: $text_blue;
-    height: 10px;
-    width: 10px;
+    background-color: black;
+    height: 6px;
+    width: 6px;
     border-radius: 50%;
     position: absolute;
     display: block;
@@ -264,5 +265,44 @@ h1 {
 .img-wrap {
   @include media-below($break-medium) {
     padding: 0;
+    margin-bottom: 30px;
   }
+}
+
+.melInfo {
+
+  @include media-below($break-medium) {
+
+  margin-top: 30px;
+}
+}
+
+.icon-wrap {
+  margin-bottom: 30px;
+}
+
+.name {
+  margin-bottom: 0;
+    color: #006bff;
+}
+
+.title {
+  margin: 0;
+font-size: 18px;
+color: #3d4658;
+font-style: italic;
+font-weight: normal;
+}
+
+
+.hide-small {
+  @include media-below($break-medium) {
+    display: none!important;
+  }
+}
+
+
+.med-icon-text {
+  @extend .monst-bold;
+
 }

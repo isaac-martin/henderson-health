@@ -25,7 +25,7 @@
   }
 
   .slide-content {
-    width: 475px;
+    max-width: 475px;
     text-align: center;
     margin: 30px auto 0 auto;
     p {
@@ -40,7 +40,7 @@
   .btn {
     display: block;
     margin: 0 auto;
-    width: 180px;
+    width: 172px;
   }
 
   .slick-dots {
@@ -69,10 +69,11 @@
 
 .slide-cta {
   font-size:40px; line-height: 44px;
-  width: 475px;
+  max-width: 475px;
   margin: 0 auto;
   margin-bottom: 0;
-  @extend .monst-med;
+  @extend .monst-bold;
+  font-weight: 600px;
   @include media-below($break-medium) {
       font-size: 2.8rem; line-height: 3.6rem;
   }

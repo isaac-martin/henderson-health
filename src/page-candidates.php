@@ -2,7 +2,7 @@
 <main class="site-main">
     <?php include 'inc/imgheader.php'; ?>
     <div class="container">
-      <div class="grid-middle">
+      <div class="grid">
         <div class="col-8_sm-12" data-push-left="off-2_sm-0">
           <div class="inner-container">
             <?php the_field('page_intro'); ?>
@@ -24,6 +24,8 @@
 
   <section class="icon-group">
     <div class="container">
+      <div class="inner-container">
+
       <div class="grid">
         <div class="col-12">
             <h3 class="center" style="margin-bottom:60px;"><?php the_field('icon_title');?></h3>
@@ -34,7 +36,7 @@
         $title = get_sub_field('title');
         $desc = get_sub_field('description');
         ?>
-        <div class="col-3_sm-6">
+        <div class="col-3_sm-12">
           <div class="circle-icon">
               <img class="icon" src="<?php echo $icon ?>">
           </div>
@@ -50,7 +52,10 @@
       <a href="/register" class="btn btn-secondary">Register</a>
     </div>
       </div>
-    </div>
+    </div>        
+          </div>
+
+        </div>
   </section>
 
 

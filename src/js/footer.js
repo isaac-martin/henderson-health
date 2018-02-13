@@ -31,6 +31,12 @@
   });
 
 
+  $('.menu-item-has-children').hover(function() {
+    $('.wrap-header').toggleClass('sub-active');
+    console.log('test');
+  });
+
+
 
   $('.testSlider').slick({
     arrows: false,
