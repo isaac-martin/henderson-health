@@ -2,7 +2,7 @@
 <main class="site-main">
     <?php include 'inc/imgheader.php'; ?>
     <div class="container">
-      <div class="grid-middle">
+      <div class="grid">
         <div class="col-8_sm-12" data-push-left="off-2_sm-0">
           <div class="inner-container">
           <?php the_field('page_intro'); ?>
@@ -33,7 +33,7 @@
 
 <section class="icon-group">
   <div class="container">
-    <div class="grid-middle">
+    <div class="grid">
       <div class="col-12">
         <h3 class="center">Lorem Ipsum Dolor</h3>
       </div>

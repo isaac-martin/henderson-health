@@ -138,6 +138,7 @@ padding: 30px;
   label[for="ja-keywords"] {
     display: block;
     margin-bottom: 5px;
+    margin-top: 10px;
   }
 
   select {
@@ -148,6 +149,10 @@ padding: 30px;
     font-family: $opensans;
     height: 40px;
     margin-top: 20px;
+
+    @media screen and (max-width: 48em) {
+    width: 100%;
+  }
   }
 
 }
@@ -220,6 +225,8 @@ padding: 30px;
 
 .ja-pager {
       margin-left: -40px;
+      @media screen and (max-width: 48em) {
+margin-left: 0;   }
   span , a {
     background: $primary-org;
     color: white;

@@ -1,8 +1,9 @@
 <?php get_header(); ?>
 <main class="site-main">
   <div class="container">
-    <div class="grid-middle">
-      <div class="col-6" data-push-left="off-1_sm-0">
+    <div class="grid reverse">
+      <div class="col-6_sm-12" data-push-left="off-1_sm-0">
+				<div class="inner-container">
 				<?php if ( have_posts() ) : while (have_posts() ) : the_post(); ?>
 
 					<!-- article -->
@@ -33,8 +34,12 @@
 				<?php endif; ?>
 
       </div>
-      <div class="col-3" data-push-left="off-1_sm-0">
-        <?php get_sidebar(); ?>
+
+		</div>
+      <div class="col-3_sm-12" data-push-left="off-1_sm-0">
+				<div class="inner-container">
+					   <?php get_sidebar(); ?>
+				</div>
       </div>
     </div>
 </div>

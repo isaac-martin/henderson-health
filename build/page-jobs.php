@@ -3,7 +3,7 @@
     <?php include 'inc/imgheader.php'; ?>
 <section class="">
     <div class="inner-container jobs-container">
-      <div class="grid-middle">
+      <div class="grid">
         <div class="col-12">
           <div id="ja-jobs-widget"></div>
 <script>

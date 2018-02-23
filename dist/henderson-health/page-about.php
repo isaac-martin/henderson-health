@@ -2,7 +2,7 @@
 <main class="site-main">
     <?php include 'inc/imgheader.php'; ?>
     <div class="container">
-      <div class="grid-middle">
+      <div class="grid">
         <div class="col-8_sm-12" data-push-left="off-2_sm-0">
           <div class="inner-container">
               <?php the_field('page_intro'); ?>
@@ -13,7 +13,7 @@
 
   <section class="grey-bg fullW">
     <div class="container">
-      <div class="grid-middle">
+      <div class="grid">
         <div class="col-12">
           <h2 class="center">Why Work With Us?</h2>
         </div>
@@ -39,26 +39,26 @@
       </div>
     </div>
   </section>
-  
+
   <?php if( have_rows('team') ):?>
   <section class="melInfo">
     <div class="container">
+          <div class="inner-container">
           <?php while ( have_rows('team') ) : the_row();?>
       <div class="grid-middle">
-          <div class="inner-container">
-        <div class="col-2_sm-6" data-push-left="off-2_sm-0">
-          <img class="headshot" src="<?php the_field('headhshot'); ?>">
+        <div class="col-3_sm-6" data-push-left="off-1_sm-3">
+          <img class="headshot" src="<?php the_sub_field('headhshot'); ?>">
         </div>
         <div class="col-7_sm-12" data-push-left="off-1_sm-0">
           <h3 class="name"><?php the_sub_field('name'); ?></h3>
-          <h5><?php the_sub_field('title'); ?></h5>
+          <h5 class="title"><?php the_sub_field('title'); ?></h5>
           <p>
             <?php the_sub_field('description'); ?>
           </p>
         </div>
       </div>
-    </div>
       <?php endwhile; ?>
+        </div>
     </div>
   </section>
 

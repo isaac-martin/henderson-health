@@ -68,10 +68,22 @@ function pagination() {
         'current' => max( 1, get_query_var( 'paged' ) ),
         'total'   => $wp_query->max_num_pages,
         'prev_text' => '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-        'next_text' => '<i class="fa fa-angle-right" aria-hidden="true"></i>'    
+        'next_text' => '<i class="fa fa-angle-right" aria-hidden="true"></i>'
     ) );
 }
 
 
 
 //Bullshit Redirect
+
+
+add_action( 'template_redirect', 'redirect_to_specific_page' );
+
+function redirect_to_specific_page() {
+
+if ( ! is_user_logged_in() ) {
+
+wp_redirect( 'http://www.hendersonhealthcare.com/', 301 );
+  exit;
+    }
+}

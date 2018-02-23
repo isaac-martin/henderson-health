@@ -111,6 +111,13 @@ h1 {
 @media screen and (max-width: 48em) {
   .image-header{
     background-image: url('imgs/henderson-about-header-mob.jpg');
+
+    h1 {
+      padding-top: 20px;
+      max-width: 80%;
+      margin: 0 auto;
+      display: block;
+    }
   }
 }
 .icon-text {
@@ -304,5 +311,8 @@ font-weight: normal;
 
 .med-icon-text {
   @extend .monst-bold;
+}
 
+p:last-of-type {
+  margin-bottom: 0;
 }
