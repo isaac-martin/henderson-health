@@ -15,7 +15,7 @@
         <div class="slide" <?php if (!$i) { ?> id="logotype"<?php } ?>>
           <div class="hero-img img-<?php echo $i; ?>">
               <div class="grid-middle h100">
-                <div class="col-6_sm-12 slide-wrap" data-push-left="off-3_sm-0">
+                <div class="col-6_sm-12 slide-wrap" data-push-left="off-3_sm-0" style="margin-top:30px;">
                     <div class="slide-wrap">
                   <h2 class="slide-cta"><?php echo $title ?></h2>
                   <img src="<?php bloginfo('template_directory'); ?>/imgs/logotype.png" class="slider-logotype" />

@@ -46,7 +46,7 @@
           <div class="inner-container">
           <?php while ( have_rows('team') ) : the_row();?>
       <div class="grid-middle">
-        <div class="col-3_sm-6" data-push-left="off-1_sm-0">
+        <div class="col-3_sm-6" data-push-left="off-1_sm-3">
           <img class="headshot" src="<?php the_sub_field('headhshot'); ?>">
         </div>
         <div class="col-7_sm-12" data-push-left="off-1_sm-0">
