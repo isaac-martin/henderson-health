@@ -83,7 +83,7 @@ function redirect_to_specific_page() {
 
 if ( ! is_user_logged_in() ) {
 
-wp_redirect( 'http://www.hendersonhealthcare.com/', 301 );
+wp_redirect( 'http://hendersonhealthcare.com.au/', 301 );
   exit;
     }
 }
