@@ -77,13 +77,13 @@ function pagination() {
 //Bullshit Redirect
 
 
-// add_action( 'template_redirect', 'redirect_to_specific_page' );
-//
-// function redirect_to_specific_page() {
-//
-// if ( ! is_user_logged_in() ) {
-//
-// wp_redirect( 'http://hendersonhealthcare.com.au/', 301 );
-//   exit;
-//     }
-// }
+add_action( 'template_redirect', 'redirect_to_specific_page' );
+
+function redirect_to_specific_page() {
+
+if ( ! is_user_logged_in() ) {
+
+wp_redirect( 'http://hendersonhealthcare.com.au/', 301 );
+  exit;
+    }
+}
