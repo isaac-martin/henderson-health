@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700|Open+Sans:300,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700|Open+Sans:300,600,600i');
 
 //Font Type
 $opensans:  'Open Sans', sans-serif;
@@ -24,6 +24,11 @@ $monst: 'Montserrat', sans-serif;
 .monst-med {
   font-family: $monst;
   font-weight: 500;
+}
+
+.monst-semi-bold {
+  font-family: $monst;
+  font-weight: 600;
 }
 
 .monst-bold {

@@ -72,7 +72,7 @@
   max-width: 475px;
   margin: 0 auto;
   margin-bottom: 0;
-  @extend .monst-bold;
+  @extend .monst-med;
   font-weight: 600px;
   @include media-below($break-medium) {
       font-size: 2.8rem; line-height: 3.6rem;

@@ -12,7 +12,10 @@
   $('.slider').slick({
     arrows: false,
     dots: true,
-    infinite: false
+    infinite: false,
+    autoplay: true,
+    autoplaySpeed: 10000,
+
   });
 
   $( ".menu-item-has-children" ).append( $( '<i class="fa fa-plus"></i>' ) );

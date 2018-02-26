@@ -290,3 +290,13 @@ body .gform_wrapper .top_label div.ginput_container {
   font-weight: 700!important;
   font-size: 14px;
 }
+
+.name-input {
+  display: inline-block;
+width: 49%;
+float: left;
+clear: initial;
+&:last-of-type {
+  float: right;
+}
+}
