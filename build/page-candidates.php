@@ -14,7 +14,7 @@
   <section>
     <div class="inner-container">
       <div class="grid background-grid" style="background-image:url(<?php the_field('hero_image_background');?>">
-        <div class="col-4_sm-12 hero-text-wrap">
+        <div class="col-4_sm-12 hero-text-wrap reveal">
           <h2><?php the_field('text_title_copy');?></h2>
           <p><?php the_field('text_content');?></p>
         </div>
@@ -28,7 +28,7 @@
 
       <div class="grid">
         <div class="col-12">
-            <h3 class="center" style="margin-bottom:60px;"><?php the_field('icon_title');?></h3>
+            <h3 class="center"><?php the_field('icon_title');?></h3>
         </div>
         <?php if( have_rows('our_approach') ):
         while( have_rows('our_approach') ): the_row();

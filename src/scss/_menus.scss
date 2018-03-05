@@ -104,7 +104,7 @@
 
 // Menu toggle for mobile phones and small screens
 #responsive-menu-toggle {
-  @include media-above($break-medium) {
+  @include media-above($break-large) {
     display: none;
   }
 }

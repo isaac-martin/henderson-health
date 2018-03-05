@@ -56,12 +56,12 @@ $monst: 'Montserrat', sans-serif;
 .icon-intro-blue {
   text-transform: uppercase;
   color: $text-blue;
-  @extend .monst-bold;
+  @extend .monst-semi-bold;
 }
 
 p {
   margin: 0 0 30px;
     font-size: 18px;
     line-height: 24px;
-    letter-spacing: -.6px;
+    // letter-spacing: -.6px;
 }

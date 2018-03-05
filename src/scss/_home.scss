@@ -15,7 +15,7 @@
 .specLink {
   color: white;
   text-align: center;
-  @extend .monst-bold;
+  @extend .monst-semi-bold;
   background: rgba(0,0,0, 0.45);
   display: inline-block;
   position: absolute;
@@ -27,6 +27,7 @@
   padding: 115px 0 0 0;
   transition: .5s all ease;
   font-size: 18px;
+  letter-spacing: 2.2px;
 
   &:hover {
     background: rgba(0,0,0, 0.2);
@@ -77,7 +78,7 @@
 }
 
 .testimonials {
-      padding-bottom: 45px;
+      padding-bottom: 30px;
   .slick-dots {
     bottom: -65px;
     li {

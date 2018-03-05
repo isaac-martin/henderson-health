@@ -293,9 +293,9 @@ body .gform_wrapper .top_label div.ginput_container {
 
 .name-input {
   display: inline-block;
-width: 49%;
+width: 50%;
 float: left;
-clear: initial;
+clear: none!important;
 &:last-of-type {
   float: right;
 }

@@ -10,7 +10,7 @@
   padding: 0 30px;
   margin: 0 auto;
 
-  @include media-above($break-small) {
+  @include media-above($break-medium) {
 padding: 0 20px;
   }
 }
@@ -55,6 +55,10 @@ padding: 0 20px;
   }
   @include media-below($break-medium) {
     padding-bottom: spacer(1);
+  }
+  
+  @include media-below($break-medium) {
+    margin-top: 45px;
   }
 }
 
@@ -103,7 +107,7 @@ padding: 0 20px;
 }
 
 .site-main{
-  padding-top: 107px;
+  padding-top: 99px;
 
 
     @include media-below($break-medium) {
@@ -350,9 +354,9 @@ article.post {
 
 .footer-logo-wrap svg {
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     left: 0;
-    width: 200px
+    width: 240px
 }
 
 .footer-logo-wrap svg .words {

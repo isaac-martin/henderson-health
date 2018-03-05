@@ -35,7 +35,7 @@
   <div class="container">
     <div class="grid">
       <div class="col-12">
-        <h3 class="center">Lorem Ipsum Dolor</h3>
+        <h3 class="center"><?php the_field('icon_title'); ?></h3>
       </div>
       <?php if( have_rows('icon_group') ):
       while( have_rows('icon_group') ): the_row();
