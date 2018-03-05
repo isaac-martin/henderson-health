@@ -48,7 +48,7 @@
     <section class="icons-wrapper">
       <section class="icons">
         <div class="inner-container">
-          <div class="grid">
+          <div class="grid-bottom">
             <?php if( have_rows('icon_group') ):
             while( have_rows('icon_group') ): the_row();
             $icon = get_sub_field('icon');
