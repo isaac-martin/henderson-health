@@ -12,9 +12,10 @@
   $('.slider').slick({
     arrows: false,
     dots: true,
-    infinite: false,
+    infinite: true,
     autoplay: true,
     autoplaySpeed: 10000,
+    // autoplaySpeed: 100,
 
   });
 
@@ -47,5 +48,11 @@
     infinite: false,
     autoplay: true,
 autoplaySpeed: 10000,
+  });
+  
+  $(window).scroll(function(){
+    $(".slide-wrap").css("opacity", 1 - $(window).scrollTop() / 100);
+      // $(".hero-img").css("transform","translate3d(0px, " +  + "px, 0px);
+    $(".hero-img").css({"transform": "translate3d(0px, " + $(this).scrollTop() / 1.7 + "px, 0px)"});
   });
   })(jQuery, this);

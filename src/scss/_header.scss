@@ -38,6 +38,7 @@
     }
 
     .search-btn {
+      margin-top: 3px;
         a {
           color: $white!important;
         }
@@ -54,7 +55,6 @@
     }
   @include media-below($break-medium) {
     margin-left: 20px;
-    display: block;
     max-width: 205px;
     z-index: 99;
       .words {

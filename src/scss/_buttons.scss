@@ -1,16 +1,15 @@
 .btn, .ja-button, .view-details, .gform_button, strong a {
     padding: 12px 25px;
-    letter-spacing: 1.3px;
+    letter-spacing: 1.1px;
     text-align: center;
     border-radius: 8px;
     transition: all .5s ease;
     background: $primary-org;
     color: $white;
-    
+  
     @extend .monst;
     text-transform: uppercase;
   font-size: 15px;
-  letter-spacing: 2px;
   transition: all .5s ease;
 
   &:hover {

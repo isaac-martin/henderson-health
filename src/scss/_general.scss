@@ -303,7 +303,7 @@ margin-top: 30px;
 .img-wrap {
   @include media-below($break-medium) {
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 }
 
@@ -342,7 +342,8 @@ font-weight: normal;
 
 .med-icon-text {
   @extend .monst-med;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.1px;
+  margin-top: 15px;
   
   @include media-below($break-medium) {
     font-size: 16px;

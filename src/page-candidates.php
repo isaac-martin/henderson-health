@@ -3,7 +3,7 @@
     <?php include 'inc/imgheader.php'; ?>
     <div class="container">
       <div class="grid">
-        <div class="col-8_sm-12" data-push-left="off-2_sm-0">
+        <div class="col-8_sm-12" data-push-left="off-2_sm-0" style="padding-bottom:0;">
           <div class="inner-container">
             <?php the_field('page_intro'); ?>
           </div>
@@ -28,7 +28,7 @@
 
       <div class="grid">
         <div class="col-12">
-            <h3 class="center"><?php the_field('icon_title');?></h3>
+            <h3 class="center" style="margin-bottom:0;"><?php the_field('icon_title');?></h3>
         </div>
         <?php if( have_rows('our_approach') ):
         while( have_rows('our_approach') ): the_row();

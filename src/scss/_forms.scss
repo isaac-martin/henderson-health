@@ -296,6 +296,11 @@ body .gform_wrapper .top_label div.ginput_container {
 width: 50%;
 float: left;
 clear: none!important;
+
+@include media-below($break-medium) {
+  width: 100%;
+}
+
 &:last-of-type {
   float: right;
 }
