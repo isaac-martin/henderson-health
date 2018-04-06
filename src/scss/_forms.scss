@@ -250,41 +250,36 @@ body .gform_wrapper .top_label div.ginput_container {
   border-radius: 5px;
 }
 
-.fileupload {
-  display: flex;
-  flex-direction: row-reverse;
-  width: auto;
-  width: 370px;
-  max-width: 100%;
-  .gfield_description {
-    font-size: 14px!important;
-    max-width: 175px!important;
-    margin-right: 20px;
-      @extend .monst-bold;
-  }
-  .gfield_label {
-    color: $white;
-    background: $primary-org;
-    width: 140px!important;
-  text-align: center;
-  max-height: 38px;
-  padding: 10px!important;
-    border-radius: 4px;
-    margin-right: 10px;
-    font-weight: 700!important;
-    text-transform: uppercase;
-  }
+// .fileupload {
+//   display: flex;
+//   flex-direction: row-reverse;
+//   width: auto;
+//   width: 370px;
+//   max-width: 100%;
+//   .gfield_description {
+//     font-size: 14px!important;
+//     max-width: 175px!important;
+//     margin-right: 20px;
+//       @extend .monst-bold;
+//   }
+//   .gfield_label {
+//     color: $white;
+//     background: $primary-org;
+//     width: 140px!important;
+//   text-align: center;
+//   max-height: 38px;
+//   padding: 10px!important;
+//     border-radius: 4px;
+//     margin-right: 10px;
+//     font-weight: 700!important;
+//     text-transform: uppercase;
+//   }
 .ginput_container_fileupload {
   input[type=file] {
-	width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	z-index: -1;
+    padding: 10px 0;
 }
 }
-}
+// }
 
 .gform_wrapper .fileupload .gfield_label {
   font-weight: 700!important;

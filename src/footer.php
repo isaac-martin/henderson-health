@@ -8,7 +8,7 @@
             <a class="footer-email" href="mailto:<?php the_field('email','15'); ?>"><?php the_field('email','15'); ?></a>
             <p class="footer-linkedin">Connect With Us <a href="<?php the_field('linkedin','15'); ?>"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a><a href="<?php the_field('facebook','15'); ?>"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></p>
             <p class="copyright">
-              <a href="/privacy">Privacy Policy</a> &copy; Henderson Recruitment Pty Ltd <?php echo date('Y'); ?>
+              <a href="/privacy-policy">Privacy Policy</a> &copy; Henderson Recruitment Pty Ltd <?php echo date('Y'); ?>
             </p>
           </div>
           <div class="col-4_sm-12 hide-small" data-push-left="off-1_sm-0">

@@ -1,9 +1,14 @@
 .icons {
   width: 80%;
-  margin: 45px auto;
+  margin: 45px auto 15px auto;
   .col, [class*=col-] {
     padding-bottom: 0;
   }
+  
+  @include media-below($break-medium) {
+    width: 100%;
+  }
+  
 }
 
 .icon {

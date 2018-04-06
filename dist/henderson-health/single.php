@@ -32,7 +32,9 @@
 				<?php endwhile; ?>
 
 				<?php endif; ?>
-
+				
+				<a class="btn news-btn" href="/news">Back To News</a>
+				
       </div>
 
 		</div>
@@ -45,19 +47,3 @@
 </div>
 <?php get_footer(); ?>
 
-
-
-
-<?php get_header(); ?>
-
-	<main role="main" aria-label="Content">
-	<!-- section -->
-	<section>
-
-
-	</section>
-	<!-- /section -->
-	</main>
-
-
-<?php get_footer(); ?>

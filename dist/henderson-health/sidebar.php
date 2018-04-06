@@ -8,7 +8,7 @@
 
 <!-- Category Archive --> 
 
-<p>Categories</p>
+<p style="margin-bottom: 10px;">Categories</p>
 
 <ul class="cat-list">
     <?php wp_list_categories( array(
@@ -32,7 +32,7 @@
 );
 
 ?>
-<p>Archive</p>
+<p style="margin-bottom: 10px;">Archive</p>
 <ul class="arch-list">
 <?php wp_get_archives( $args ); ?>
 </ul>

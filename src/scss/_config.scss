@@ -6,6 +6,7 @@ $text-blue: #006bff;
 $text-blue-light: #0fc0f2;
 $primary-org: #f07246;
 $grey: #20252f;
+$text-grey: #3d4658;
 $grey-light: #e8e8e8;
 $white: #FFFFFF;
 $grey-blue: #3d4658;
@@ -29,13 +30,14 @@ $width-site:    1200px;
 $break-small:   480px;
 $break-medium:  620px;
 $break-large:   800px;
+$break-xl:   1080px;
 
 // A standard margin
 $spacer:        30px;
 
 // A modest palette; see `_library.scss` for the color() function
 $_color: (
-  text: $grey,
+  text: $text-grey,
   link: $text-blue,
   link-muted: $text-blue,
   body-background: $white,

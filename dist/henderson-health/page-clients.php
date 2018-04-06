@@ -15,7 +15,7 @@
     <div class="container">
 
   <div class="col-12">
-    <h2><?php the_field('icon_title'); ?></h2>
+    <h2>We Work With</h2>
     <ul class="content-list thirds">
     <?php if( have_rows('we_work_with') ):
     while( have_rows('we_work_with') ): the_row();
