@@ -13,9 +13,9 @@
 
   <section class="grey-bg fullW">
     <div class="container">
-
-  <div class="col-12">
-    <h2>We Work With</h2>
+<div class="grid">
+  <div class="col-11_sm-12" data-push-left="off-1_sm-0">
+    <h2 style="text-align:center;">We Work With</h2>
     <ul class="content-list thirds">
     <?php if( have_rows('we_work_with') ):
     while( have_rows('we_work_with') ): the_row();
@@ -28,6 +28,7 @@
 <?php endif; ?>
 </ul>
   </div>
+</div>
 </div>
 </section>
 

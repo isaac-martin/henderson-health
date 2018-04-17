@@ -61,6 +61,7 @@ module.exports = {
       footer: [
         modules+'timeago/jquery.timeago.js', // The modules directory contains packages downloaded via npm
         src+'js/responsive-menu.js',
+        src+'js/jobadder.js',
         src+'js/footer.js'
       ],
       header: [

@@ -188,12 +188,13 @@ padding: 30px;
 .ja-job-list-container, .ja-job-details {
   width: 60%;
   margin-left: 20%;
-  padding-top: 60px;
+  margin-top: 60px;
 
     @include media-below($break-medium) {
       width: 100%;
       margin-left: 0;
-      padding-top: 80px
+      padding-top: 80px;
+      padding: 30px;
     }
 
   .job {
@@ -431,8 +432,7 @@ form {
   }
   }
 }
-
-#powered-by-jobAdder {
-  display: none!important;
 }
+#ja-jobs-widget .powered-by-jobadder {
+  display: none!important;
 }
