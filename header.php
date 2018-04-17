@@ -64,12 +64,12 @@
           </svg>
 
         </a>
-      <?php  if ( is_user_logged_in() ) { ?>
+      <?php // if ( is_user_logged_in() ) { ?>
         <a class="mob-jobs-btn search-btn btn" href="/jobs">Search Jobs</a>
         <button id="responsive-menu-toggle"><span></span><span></span><span></span></button>
         <nav id="site-navigation" class="site-navigation">
           <div id="responsive-menu"><?php wp_nav_menu( array( 'theme_location' => 'header', 'menu_id' => 'menu-header', 'menu_class' => 'menu-inline' ) ); ?></div>
         </nav>
-      <?php  } ?>
+      <?php // } ?>
       </header>
     </div>
