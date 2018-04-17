@@ -1,9 +1,4 @@
 <?php get_header(); ?>
-<!--[if IE]>
-  .ja-field-container select {
-	height: inherit!important;
-}
-<![endif]-->
 
 <main class="site-main">
     <?php include 'inc/imgheader.php'; ?>
