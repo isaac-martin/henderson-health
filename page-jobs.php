@@ -25,7 +25,6 @@
 		}
 	};
 </script>
-<script src="<?php echo get_template_directory(); ?>/js/x-jobadder.js"></script>
   </div>
         </div>
       </div>
