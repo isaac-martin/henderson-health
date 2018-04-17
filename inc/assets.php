@@ -17,6 +17,13 @@ function health_assets_header() {
     wp_register_script('slick', "//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js", array('jquery'), '1.7.1'); // Slick JS
     wp_enqueue_script('slick'); // Enqueue it!
 
+
+    wp_register_script('modernizer', "//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js", array(), '2.8.3'); // Slick JS
+    wp_enqueue_script('modernizer'); // Enqueue it!
+
+
+
+
     wp_register_script('fa', "//use.fontawesome.com/1034a05c8f.js", array('jquery'), '1'); // Slick JS
     wp_enqueue_script('fa'); // Enqueue it!
 
