@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <!--[if IE]>
   .ja-field-container select {
-	height: inherit;
+	height: inherit!important;
 }
 <![endif]-->
 
