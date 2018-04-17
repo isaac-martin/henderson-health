@@ -25,7 +25,7 @@
 		}
 	};
 </script>
-<!-- <script src="//jobadder.com/widgets/v1/jobs.min.js"></script> -->
+<script src="<?php echo get_template_directory(); ?>/js/x-jobadder.js"></script>
   </div>
         </div>
       </div>
