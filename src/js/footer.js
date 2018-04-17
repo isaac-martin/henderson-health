@@ -49,7 +49,19 @@
     autoplay: true,
 autoplaySpeed: 10000,
   });
-  
+
+
+// document.getElementsByName('ja-keywords')[0].placeholder='Type here to search';
+
+$(document).ready(function() {
+  setTimeout(function(){
+        $("#ja-keywords").attr('placeholder', 'Keywords');
+        $("label[for='ja-def-20353']").text('Select category to see subcategories.');
+     }, 1100);
+});
+
+
+
   $(window).scroll(function(){
     $(".slide-wrap").css("opacity", 1 - $(window).scrollTop() / 100);
       // $(".hero-img").css("transform","translate3d(0px, " +  + "px, 0px);

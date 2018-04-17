@@ -1187,4 +1187,10 @@
             "complete" !== this.readyState && "loaded" !== this.readyState || scriptLoadHandler()
         } : scriptTag.onload = scriptLoadHandler, (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(scriptTag)
     } else jQuery = window.jQuery, main()
+
+    // jQuery("#ja-keywords").attr("placeholder", "Keywords").val("").focus().blur();
 }();
+
+// setTimeout(function(){
+//     document.getElementById('ja-keywords')[0].placeholder='Type here to search';
+// } , 3000);

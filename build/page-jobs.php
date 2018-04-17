@@ -20,7 +20,7 @@
 		},
 		applicationFormSettings: {
 			useExternalApplicationForm: true,
-			showExternalApplicationFormInNewWindow: true
+			showExternalApplicationFormInNewWindow: false
 		}
 	};
 </script>
