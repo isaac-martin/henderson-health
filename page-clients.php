@@ -38,6 +38,8 @@
       <div class="col-12">
         <h3 class="center"><?php the_field('icon_title'); ?></h3>
       </div>
+      </div>
+      <div class="grid icon-grid">
       <?php if( have_rows('icon_group') ):
       while( have_rows('icon_group') ): the_row();
       $icon = get_sub_field('icon');
@@ -58,6 +60,7 @@
     </div>
     <?php endwhile; ?>
   <?php endif; ?>
+</div>
 
     </div>
   </div>
@@ -67,7 +70,7 @@
   <section>
     <div class="inner-container">
       <div class="grid background-grid" style="background-image:url(<?php the_field('hero_image_background');?>">
-        <div class="col-4_sm-12 hero-text-wrap reveal">
+        <div class="col-6_sm-12 hero-text-wrap reveal">
           <h2><?php the_field('text_title');?></h2>
           <p><?php the_field('text_content');?></p>
         </div>

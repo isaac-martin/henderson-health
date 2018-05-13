@@ -17,6 +17,8 @@
         <div class="col-12">
           <h2 class="center">Why Work With Us?</h2>
         </div>
+      </div>
+      <div class="grid icon-grid">
           <?php if( have_rows('why_work_with_us') ):
           while( have_rows('why_work_with_us') ): the_row();
           $icon = get_sub_field('icon');
@@ -35,18 +37,20 @@
         </div>
         <?php endwhile; ?>
       <?php endif; ?>
+
+    </div>
         </div>
       </div>
     </div>
   </section>
 
   <?php if( have_rows('team') ):?>
-  <section class="melInfo">
+  <section class="team-wrap">
     <div class="container">
           <div class="inner-container">
           <?php while ( have_rows('team') ) : the_row();?>
       <div class="grid-middle">
-        <div class="col-3_sm-6" data-push-left="off-1_sm-3">
+        <div class="col-3_sm-8" data-push-left="off-1_sm-2">
           <img class="headshot" src="<?php the_sub_field('headhshot'); ?>">
         </div>
         <div class="col-7_sm-12" data-push-left="off-1_sm-0">

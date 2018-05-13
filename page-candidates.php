@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main class="site-main">
     <?php include 'inc/imgheader.php'; ?>
-    <div class="container">
+    <div class="container" style="padding-bottom:0;">
       <div class="grid">
         <div class="col-8_sm-12" data-push-left="off-2_sm-0" style="padding-bottom:0;">
           <div class="inner-container">
@@ -14,7 +14,7 @@
   <section>
     <div class="inner-container">
       <div class="grid background-grid" style="background-image:url(<?php the_field('hero_image_background');?>">
-        <div class="col-4_sm-12 hero-text-wrap reveal">
+        <div class="col-6_sm-12 hero-text-wrap reveal">
           <h2><?php the_field('text_title_copy');?></h2>
           <p><?php the_field('text_content');?></p>
         </div>
@@ -28,8 +28,11 @@
 
       <div class="grid">
         <div class="col-12">
-            <h3 class="center" style="margin-bottom:0;"><?php the_field('icon_title');?></h3>
+            <h3 class="center mb"><?php the_field('icon_title');?></h3>
         </div>
+      </div>
+      <div class="grid icon-grid four">
+
         <?php if( have_rows('our_approach') ):
         while( have_rows('our_approach') ): the_row();
         $icon = get_sub_field('icon');
@@ -48,11 +51,14 @@
         </div>
       <?php endwhile; ?>
     <?php endif; ?>
+  </div>
+  <div class="grid">
     <div class="col-12 center" style="margin-top:30px;">
       <a href="/register" class="btn btn-secondary">Register</a>
     </div>
+  </div>
       </div>
-    </div>        
+    </div>
           </div>
 
         </div>

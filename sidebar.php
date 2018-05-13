@@ -6,23 +6,23 @@
 
 
 
-<!-- Category Archive --> 
+<!-- Category Archive -->
 
-<p style="margin-bottom: 10px;">Categories</p>
+<p style="margin-bottom: 10px; font-size:18px;">Categories</p>
 
 <ul class="cat-list">
     <?php wp_list_categories( array(
         'orderby'    => 'name',
 				'title_li' => ''
-    ) ); ?> 
+    ) ); ?>
 </ul>
 
-<!-- Yearly Archive --> 
+<!-- Yearly Archive -->
 
 <?php $args = array(
 	'type'            => 'yearly',
 	'limit'           => '',
-	'format'          => 'html', 
+	'format'          => 'html',
 	'before'          => '',
 	'after'           => '',
 	'show_post_count' => false,
@@ -32,7 +32,7 @@
 );
 
 ?>
-<p style="margin-bottom: 10px;">Archive</p>
+<p style="margin-bottom: 10px;font-size:18px;">Archive</p>
 <ul class="arch-list">
 <?php wp_get_archives( $args ); ?>
 </ul>

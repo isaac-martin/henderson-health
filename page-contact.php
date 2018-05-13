@@ -5,7 +5,7 @@
       <div class="grid">
         <div class="col-3_sm-12" data-push-left="off-1_sm-0">
           <div class="inner-container">
-            <h2><?php the_field('contact_title'); ?></h2>
+            <h2 class="contact-title"><?php the_field('contact_title'); ?></h2>
             <h3 class="contact-phone"><?php the_field('phone'); ?></h3>
             <a class="email" href="mailto:<?php the_field('email','15'); ?>"><?php the_field('email','15'); ?></a>
             <p class="address"><?php the_field('address'); ?></p>
